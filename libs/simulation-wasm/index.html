@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EPIC SIMULATION</title>
+</head>
+<style>
+body {
+    background: #323d5c;
+}
+
+canvas {
+    background: #1f2639;
+    border: 5px solid white;
+}
+
+#train {
+    position: absolute;
+    top: 6.4%;
+    margin: 15px;
+
+    background: #1f2639;
+    color: white;
+    border: solid 4px white;
+    
+    height: 60px;
+    width: 120px;
+
+    font-size: x-large;
+
+    transition-duration: 0.3s;
+}
+
+#train:hover {
+    border-color: #1f2639;
+    background-color: white;
+    color: #1f2639;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    text-decoration: underline;
+}
+
+table, th, td {
+    background-color: #1f2639;
+    color: white;
+    border: 3px white solid;
+    margin: 3px;
+
+    font-size: 30px;
+}
+
+table {
+    width: 800px;
+}
+</style>
+<body>
+    <h1 id="title">EPIC SIMULATION</h1>
+    <br>
+    <canvas id="viewport" width="800" height="800"></canvas>  
+    <button id="train">TRAIN</button>
+    <br>
+    <table>
+        <tr>
+            <th>Max</th>
+            <th>Max Index</th>
+            <th>Min</th>
+            <th>Min Index</th>
+            <th>Avg</th>
+        </tr>
+        <tr>
+            <td id="max">0</td>
+            <td id="max_index">0</td>
+            <td id="min">0</td>
+            <td id="min_index">0</td>
+            <td id="avg">0</td>
+        </tr>
+    </table>
+    <script type="module" src="index.js"></script>
+</body>
+</html>
