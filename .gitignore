@@ -3,3 +3,6 @@
 libs/simulation-wasm/package.json
 
 libs/simulation-wasm/node_modules
+
+
+libs/simulation-wasm/package-lock.json
