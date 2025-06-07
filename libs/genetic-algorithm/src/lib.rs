@@ -286,18 +286,6 @@ mod tests {
     }
 
     #[test]
-    fn max_index() {
-        let genes = {individual(&[0.0, 0.0, 0.0]),
-            individual(&[1.0, 1.0, 1.0]),
-            individual(&[1.0, 2.0, 1.0]),
-            individual(&[1.0, 2.0, 4.0])};
-
-
-        let population = TestIndividual::create(genes.iter().cloned().collect());
-        Statistics::new(population)
-    }
-
-    #[test]
     fn genetic_algorithm() {
         fn individual(genes: &[f32]) -> TestIndividual {
             TestIndividual::create(genes.iter().cloned().collect())

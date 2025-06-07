@@ -108,13 +108,13 @@ async function run() {
 		for (const [i, animal] of world.animals.entries()) {
 			let colour = 'rgb(255, 255, 255)';
 
-			if (document.getElementById("max_index").innerText == i) {
-				colour = 'rgb(255, 0, 0)';
-			}
+			//if (document.getElementById("max_index").innerText == i) {
+				//colour = 'rgb(255, 0, 0)';
+			//}
 
-			else if (document.getElementById("min_index").innerText == i) {
-				colour = 'rgb(0, 0, 255)';
-			}
+			//else if (document.getElementById("min_index").innerText == i) {
+				//colour = 'rgb(0, 0, 255)';
+			//}
 
 			ctxt.drawTriangle(
 				animal.x * viewportWidth,
